@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-swiper-slide .left{
+    height: 600px;
+    background-size: cover;
+}
+
+#swiper-slide3 .left{
+    background-size: cover;
+    background-position: center;
+}
+
+#swiper-slide1 .left{
+    background-position: 'left',   
+}
+#swiper-slide2 .left{
+    background-position: 'left',   
+}
+
+
+
+@media (max-width: 767px) {
+    .my-swiper-slide .left{
+        height: 500px;
+        background-size: cover;
+        background-position: 'center',  
+    }
+    #swiper-slide1 .left{
+        background-position: center;
+        background-size: cover;
+    }
+    #swiper-slide3 .left{
+        background-position: center;
+        background-size: contain;
+    }
+}
